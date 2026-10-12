@@ -11,8 +11,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 FEATURE_SCRIPT = PROJECT_ROOT / "FEATURE_EXTRACTION" / "extract_features.py"
 DATASET_FILE = PROJECT_ROOT / "DATA" / "raw" / "synthesis_results.csv"
-PYTHON_EXE = PROJECT_ROOT / ".venv" / "Scripts" / "python.exe"
-
+PYTHON_EXE = Path(sys.executable)
 # --------------------------------------------------
 # PAGE CONFIGURATION
 # --------------------------------------------------
