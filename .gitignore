@@ -1,0 +1,25 @@
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Temporary uploads
+APP/uploads/
+
+# Python and test caches
+.pytest_cache/
+.mypy_cache/
+
+# Editor settings
+.vscode/
+
+# Local secrets
+.env
+.streamlit/secrets.toml
+
+# Operating system files
+Thumbs.db
+.DS_Store
+# Generated VHDL simulation files
+work-obj*.cf

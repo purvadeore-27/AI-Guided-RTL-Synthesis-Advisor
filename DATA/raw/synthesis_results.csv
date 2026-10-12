@@ -1,0 +1,10 @@
+design_name,device,date_recorded,input_count,output_count,signal_count,process_count,and_count,or_count,xor_count,not_count,add_count,sub_count,mul_count,if_count,case_count,loop_count,when_count,clocked_process,reset_present,register_count,loc,worst_delay_ns,timing_constrained,path_detail,slice_luts,slice_registers,occupied_slices,muxcys,bonded_iobs,notes
+half_adder,XC6SLX45-CSG324-3,2026-10-08,2,2,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,15,6.809,no,A->Carry=6.708ns A->Sum=6.809ns(worst) B->Carry=6.196ns B->Sum=6.297ns,1,0,1,0,4,First validated pipeline sample. Map initially failed on WebPACK licensing; fixed via Help->Manage License->Load License.
+full_adder,XC6SLX45-CSG324-3,2026-10-08,3,2,0,0,3,2,2,0,0,0,0,0,0,0,0,0,0,0,16,6.65,no,A->Carry=6.650ns A->Sum=6.544ns B->Carry=6.476ns B->Sum=6.370ns C->Carry=6.196ns C->Sum=6.090ns,1,0,1,0,5,ISE 14.7 Full Adder post-PAR result
+mux,XC6SLX45-CSG324-3,2026-10-08,3,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,14,6.924,no,A->Y=6.924ns B->Y=6.718ns S->Y=6.535ns,1,0,1,0,4,ISE 14.7 2:1 MUX post-PAR result
+mux4to1,XC6SLX45-CSG324-3,2026-10-11,5,1,0,2,0,0,0,0,0,0,0,0,2,0,5,0,0,0,25,6.567,no,D -> Y,1,0,1,0,7,ISE 14.7 4:1 MUX post-PAR result
+half_subtractor,XC6SLX45-CSG324-3,2026-10-12,2,2,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,15,6.564,no,A -> DIFF,1,0,1,0,4,ISE 14.7 Half Subtractor post-PAR result
+full_subtractor,XC6SLX45-CSG324-3,2026-10-12,3,2,0,0,2,1,3,2,0,0,0,0,0,0,0,0,0,0,17,6.564,no,A -> DIFFERENCE,1,0,1,0,5,ISE 14.7 Full Subtractor post-PAR result
+ripple_carry_adder,XC6SLX45-CSG324-3,2026-10-12,3,2,1,0,12,8,8,0,0,0,0,0,0,0,0,0,0,0,33,7.466,no,A<0> -> SUM<3>,4,0,2,0,14,ISE 14.7 4-bit Ripple Carry Adder post-PAR result
+comparator4bit,XC6SLX45-CSG324-3,2026-10-12,2,3,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,18,7.388,no,B<1> -> A_LESS,5,0,2,0,11,ISE 14.7 4-bit Magnitude Comparator post-PAR result
+alu8bit,XC6SLX45-CSG324-3,2026-10-12,3,3,2,2,1,1,1,0,2,1,0,0,2,0,8,0,0,0,46,10.871,no,B<1> -> ZERO,24,0,11,0,29,8-bit ALU; ISE 14.7; unconstrained Pad-to-Pad delay
